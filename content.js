@@ -1,11 +1,6 @@
-console.log('ENTERED TIME DOCTOR');
-
 function blabla() {
-    console.log('inside function');
-    console.log($('.tracked-time'));
     const items = document.getElementsByClassName("tracked-time");
     for (let item of items) {
-        console.log('KAY');
         const time = item.innerHTML;
         if (getHours(time) == 0 && getMinutes(time) == 0) return;
         const hours = getHours(time) + getMinutes(time);
