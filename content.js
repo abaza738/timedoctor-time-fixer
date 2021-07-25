@@ -9,7 +9,7 @@ function blabla() {
 }
 
 function getHours(time) {
-    let hours = time.match(/\dh/);
+    let hours = time.match(/\d+h/);
     if (hours) {
         hours = hours[0].split('h')[0];
         return +hours;
